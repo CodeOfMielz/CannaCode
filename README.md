@@ -1,0 +1,1 @@
+This code is a personal project. As I grow stronger in Java, this project will evolve as I do. Cannabis is something that I have a very deep love for as it has allowed me to push through some very tough times in my life. It has allowed introspection. I have created a program that reflects my love of coding and cannabis.
