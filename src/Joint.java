@@ -1,18 +1,18 @@
-public class Joint extends MaryJane {
+public class Joint extends Cannabis {
 
-    String bigOrSmall;
+    String kingOrRegular;
     int rolled;
     String hempOrPaper;
-    public Joint(String name, String type, int thc, String bigOrSmall, int rolled, String hempOrPaper) {
+    public Joint(String name, String type, int thc, String kingOrRegular, int rolled, String hempOrPaper) {
         super(name, type, thc);
-        this.bigOrSmall = bigOrSmall;
+        this.kingOrRegular = kingOrRegular;
         this.rolled = rolled;
         this.hempOrPaper = hempOrPaper;
     }
 
 
-    public String getBigOrSmall() {
-        return bigOrSmall;
+    public String getKingOrRegular() {
+        return kingOrRegular;
     }
 
     public int getRolled() {
@@ -27,17 +27,17 @@ public class Joint extends MaryJane {
         this.rolled = rolled;
     }
 
-    public void setBigOrSmall(String bigOrSmall) {
-        this.bigOrSmall = bigOrSmall;
+    public void setKingOrRegular(String kingOrRegular) {
+        this.kingOrRegular = kingOrRegular;
     }
 
     public void setHempOrPaper(String hempOrPaper) {
         this.hempOrPaper = hempOrPaper;
     }
 
-    public void stuffThatShit(){
-        System.out.println("Looks like you've got " + rolled + " joints of " + getName() + " rolled up in a "
-                + bigOrSmall + " " + hempOrPaper + " joint!" +
+    public void smoke(){
+        System.out.println("Looks like you've got " + rolled + " joints of " + getStrainName() + " rolled up in a "
+                + kingOrRegular + " " + hempOrPaper + " joint!" +
                 " Cheers!");
     }
 }
