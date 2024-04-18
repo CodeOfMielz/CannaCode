@@ -1,4 +1,4 @@
-public class Blunt extends MaryJane {
+public class Blunt extends Cannabis{
     int rolled;
     String wrap;
 
@@ -8,25 +8,28 @@ public class Blunt extends MaryJane {
         this.wrap = wrap;
     }
 
-
+    @Override
     public int getRolled() {
         return rolled;
-    }
-
-    public String getWrap() {
-        return wrap;
     }
 
     public void setRolled(int rolled) {
         this.rolled = rolled;
     }
 
+    public String getWrap() {
+        return wrap;
+    }
     public void setWrap(String wrap) {
         this.wrap = wrap;
     }
 
-    public void rollThatShit(){
-        System.out.println("Looks like you've got " + rolled + " blunts of " + getName() + " Rolled up in a " + wrap +"!" +
+
+
+
+
+    public void smoke(){
+        System.out.println("Looks like you've got " + rolled + " blunts of " + getStrainName() + " Rolled up in a " + wrap +"!" +
                 " Cheers!");
     }
 }

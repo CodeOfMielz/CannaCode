@@ -1,14 +1,19 @@
 import java.util.*;
+
+
 public class Main {
+
+
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        // Create Questions that the user can answer, these will set the name, type, thc.
 
+        Scanner scanner = new Scanner(System.in);
+
+        // Create Questions that the user can answer, these will set the name, type, thc.
         String question1 = "What are you smokin' on tonight? ";
         String question2 = "Nice! Is that an indica or sativa? ";
         String question3 = "That's dank! What's the THC percentage?";
-        String question4= "Do you know how many you have rolled? (Yes/No)";
+        String question4= "Do you know how you'll be smoking it? (Yes/No)";
 
         //Using questions to get info and set variables
 
@@ -48,8 +53,9 @@ public class Main {
                 choice.equalsIgnoreCase("I don't know") ||
                 choice.equalsIgnoreCase("Don't know")){
 
-                MaryJane maryJane = new MaryJane(name, type, thc);
-                maryJane.smoke();
+
+                Cannabis cannabis = new Cannabis(name, type, thc);
+                cannabis.smoke();
         }
 
         if(choice.equalsIgnoreCase("Yes") ||
@@ -67,8 +73,8 @@ public class Main {
             Scanner bj = new Scanner(System.in); //new scanner created for if statement
 
             String bQuestion1 = "How many do you have rolled up?";
-            String bQuestion2 = "Damn! Paper or Rello?";
-            String bquestion2_1 = "What kind of rello are you rolling it in? ";
+            String bQuestion2 = "Damn! Joint or Tobacco Wrap?";
+            String bquestion2_1 = "What kind of Tobacco Wrapper are you rolling it in? ";
 
             /* A new variable is created from the user input called rolledUp,
             this will store the integer value of the amount rolled
@@ -105,16 +111,16 @@ public class Main {
                 String hempOrPaper = scanner.nextLine();
 
                 //We set the empty parameters to the user input values
-                joint.setBigOrSmall(bigOrSmall);
+                joint.setKingOrRegular(bigOrSmall);
                 joint.setRolled(rolledUp);
                 joint.setHempOrPaper(hempOrPaper);
 
                 //Method is used to print a statement showing the info the user input
-                joint.stuffThatShit();
+                joint.smoke();
 
                 //if statement for if the user enters rello
 
-            } else if (bOrJ.equals("rello")) {
+            } else if (bOrJ.equals("tobacco")) {
                 Scanner bluntscan = new Scanner(System.in);
 
                 /* Creates a new Blunt object and uses the name, type, thc, variables we set using the
@@ -131,7 +137,7 @@ public class Main {
                 blunt.setWrap(wrap);
 
                 //Method is used to print a statement showing the info the user input
-                blunt.rollThatShit();
+                blunt.smoke();
 
             }
 
