@@ -24,10 +24,6 @@ public class Blunt extends Cannabis{
         this.wrap = wrap;
     }
 
-
-
-
-
     public void smoke(){
         System.out.println("Looks like you've got " + rolled + " blunts of " + getStrainName() + " Rolled up in a " + wrap +"!" +
                 " Cheers!");
