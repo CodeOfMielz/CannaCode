@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String filePathYes = "C:\\Users\\jimie\\IdeaProjects\\CannaCode\\src\\Yes.txt";
+        String filePathYes = "Yes.txt";
         ArrayList<String> yesLinesList = FileUtil.readFile(filePathYes);
 
-        String filePathNo = "C:\\Users\\jimie\\IdeaProjects\\CannaCode\\src\\No.txt";
+        String filePathNo = "No.txt";
         ArrayList<String> noLinesList = FileUtil.readFile(filePathNo);
 
         Questions questions = new Questions();
